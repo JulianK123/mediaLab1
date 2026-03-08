@@ -29,8 +29,8 @@ This lab aims to build your first HTML5 live stream (HLS) player.
 
 | Browser | Version | OS | Result |
 |---------|---------|-----|--------|
-| Google Chrome | 122.0.6261.112 | Windows 11 | ✅ Works |
-| Mozilla Firefox | 124.0.1 | Windows 11 | ✅ Works |
+| Google Chrome | 122.0.6261.112 | Windows 11 |  Works |
+| Mozilla Firefox | 124.0.1 | Windows 11 |  Works |
 
 ### Chrome 122
 - All features work correctly
