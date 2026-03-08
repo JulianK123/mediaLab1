@@ -32,6 +32,14 @@
     videoEl.currentTime = 0;
   });
 
+  document.getElementById('btnBack').addEventListener('click', function () {
+    videoEl.currentTime = Math.max(0, videoEl.currentTime - 5);
+  });
+
+  document.getElementById('btnForward').addEventListener('click', function () {
+    videoEl.currentTime = Math.min(videoEl.duration || Infinity, videoEl.currentTime + 5);
+  });
+
   loadStream('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
 
 }());
