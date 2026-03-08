@@ -63,6 +63,14 @@
     videoEl.currentTime = Math.min(videoEl.duration || Infinity, videoEl.currentTime + 5);
   });
 
+  document.getElementById('btnShuffle').addEventListener('click', function () {
+    for (var i = streams.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = streams[i]; streams[i] = streams[j]; streams[j] = tmp;
+    }
+    currentIndex = 0;
+    renderPlaylist();
+  });
   renderPlaylist();
   loadStream(streams[currentIndex].url);
 
